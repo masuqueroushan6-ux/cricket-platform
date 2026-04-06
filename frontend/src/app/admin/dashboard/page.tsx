@@ -7,6 +7,11 @@ import { SystemStats, Match, Tournament } from '@/types';
 import { cn } from '../../../lib/utils'
 import { Trophy, Users, Swords, Activity, TrendingUp, Plus } from 'lucide-react';
 
+function formatOvers(overs: number) {
+  if (!overs) return "0.0";
+  return overs.toString();
+}
+
 function StatCard({ label, value, icon, color, href }: {
   label: string;
   value: number | string;
