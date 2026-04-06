@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { superAdminAPI, adminAPI, publicAPI } from '@/lib/api';
-import { useAuthStore } from '@/store/authStore';
+import { superAdminAPI, adminAPI, publicAPI } from '../../../lib/api';
+import { useAuthStore } from '../../../store/authStore';
 import { SystemStats, Match, Tournament } from '@/types';
-import { cn, formatOvers } from '@/lib/utils';
+import { cn } from '../../../lib/utils'
 import { Trophy, Users, Swords, Activity, TrendingUp, Plus } from 'lucide-react';
 
 function StatCard({ label, value, icon, color, href }: {
