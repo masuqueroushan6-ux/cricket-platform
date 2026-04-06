@@ -1,0 +1,18 @@
+{
+  "name": "cricket-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Cricket Tournament Management Platform - Full Stack",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "npm run build --prefix frontend",
+    "db:migrate": "npm run db:migrate --prefix backend",
+    "start:backend": "npm start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
